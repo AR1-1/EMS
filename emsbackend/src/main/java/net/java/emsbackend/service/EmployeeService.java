@@ -1,0 +1,20 @@
+package net.java.emsbackend.service;
+
+import net.java.emsbackend.dto.EmployeeDto;
+
+import java.util.List;
+
+public interface EmployeeService {
+
+    EmployeeDto createEmployee(EmployeeDto employeeDto);
+
+    EmployeeDto getEmployeeById(Long employeeId);
+
+    List<EmployeeDto> getAllEmployee();
+
+    EmployeeDto updateEmployee(Long employeeID, EmployeeDto updatedEmployee);
+
+    void deleteEmployee(Long employeeId);
+
+
+}
